@@ -158,9 +158,11 @@ h1{margin:.6rem 0 0;line-height:0}
 .reg{display:inline-flex;align-items:center;gap:.4rem;margin-top:.8rem;font-size:.75rem;font-weight:700;letter-spacing:.03em;text-decoration:none;color:var(--rojo);border:1.5px solid var(--rojo);border-radius:999px;padding:.34rem .9rem;transition:.16s}
 .reg::before{content:"→";font-weight:400}
 .reg:hover{background:var(--rojo);color:#fff}
-.reg.live-link{color:var(--azul);border-color:var(--azul)}
-.reg.live-link:hover{background:var(--azul);color:#fff}
-.slot .speakers+.reg{margin-top:.9rem}
+.reg.live-link{background:var(--tinta);color:var(--papel);border-color:var(--tinta)}
+.reg.live-link:hover{background:transparent;color:var(--tinta)}
+.slot .speakers+.reg,.slot .speakers+.regs{margin-top:.9rem}
+.regs{display:flex;flex-wrap:wrap;gap:.5rem}
+.regs .reg{margin-top:.8rem}
 .prog-nota{margin-top:1.4rem;font-size:.83rem;color:var(--gris);max-width:46rem}
 @media(max-width:600px){.slot{grid-template-columns:1fr;gap:.5rem;padding:1.3rem 1.1rem}}
 
@@ -387,8 +389,7 @@ footer.site{background:var(--tinta);color:var(--papel);padding:3.4rem 0 2.4rem;f
             <p class="detalle">Perfiles de sabor, química y atributos de calidad de los cacaos finos de Honduras, Nicaragua, Costa Rica y Panamá, con su genética, historia y regiones de cultivo. Charla interactiva con cata de muestras; se transmite en línea con traducción simultánea al inglés.</p>
             <span class="sede-tag">Auditorio <span>· presencial y en línea</span></span>
             <div class="speakers"><span class="sp"><span class="foto" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span>Dr. Carlos Eduardo Hernández<em>Universidad Nacional</em></span></div>
-            <!-- REEMPLAZAR por el enlace del formulario de la transmisión -->
-            <a class="reg live-link" href="#programa" lang="en">Online in English · register here</a>
+            <div class="regs"><a class="reg" href="https://forms.gle/37TqRHtnBNn4DZTs8" target="_blank" rel="noopener">Reservar mi lugar</a><a class="reg live-link" lang="en" href="https://forms.gle/37TqRHtnBNn4DZTs8" target="_blank" rel="noopener">Online in English · register here</a></div>
           </div>
         </article>
         <article class="slot cata" data-dias="v">
@@ -399,8 +400,7 @@ footer.site{background:var(--tinta);color:var(--papel);padding:3.4rem 0 2.4rem;f
             
             <span class="sede-tag">Aulas 1–2 <span>· cupo limitado</span></span>
             <div class="speakers"><span class="sp"><span class="foto" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span>Eugenia Volio<em>Catica</em></span></div>
-            <!-- REEMPLAZAR por el enlace del formulario de esta cata -->
-            <a class="reg" href="#programa">Registro previo · 20 cupos</a>
+            <a class="reg" href="https://forms.gle/Uw97QANtLs8xzzqT6" target="_blank" rel="noopener">Registro previo · 20 cupos</a>
           </div>
         </article>
         <article class="slot charla" data-dias="v">
@@ -412,6 +412,7 @@ footer.site{background:var(--tinta);color:var(--papel);padding:3.4rem 0 2.4rem;f
             <span class="sede-tag">Auditorio <span>· 80 personas</span></span>
             <div class="speakers"><span class="sp"><span class="foto" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span>Ana Laura Jiménez<em>Theoamo Cacao</em></span></div>
             
+              <a class="reg" href="https://forms.gle/NunBguBWcJx8qeQj9" target="_blank" rel="noopener">Reservar mi lugar</a>
           </div>
         </article>
         <article class="slot cata" data-dias="v">
@@ -422,8 +423,7 @@ footer.site{background:var(--tinta);color:var(--papel);padding:3.4rem 0 2.4rem;f
             
             <span class="sede-tag">Aulas 1–2 <span>· cupo limitado</span></span>
             <div class="speakers"><span class="sp"><span class="foto" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span>Ariana Morales<em>Theobroma Cacao</em></span></div>
-            <!-- REEMPLAZAR por el enlace del formulario de esta cata -->
-            <a class="reg" href="#programa">Registro previo · 20 cupos</a>
+            <a class="reg" href="https://forms.gle/ZqQXfXmcVBNwt6gv8" target="_blank" rel="noopener">Registro previo · 20 cupos</a>
           </div>
         </article>
         <article class="slot charla" data-dias="v">
@@ -435,6 +435,7 @@ footer.site{background:var(--tinta);color:var(--papel);padding:3.4rem 0 2.4rem;f
             <span class="sede-tag">Auditorio <span>· 80 personas</span></span>
             <div class="speakers"><span class="sp"><span class="foto" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span>Dr. Wilberth Phillips<em>Cacao Plus Internacional</em></span></div>
             
+              <a class="reg" href="https://forms.gle/pKbwkn5vho9NJTHz8" target="_blank" rel="noopener">Reservar mi lugar</a>
           </div>
         </article>
         <article class="slot cata" data-dias="s">
@@ -445,8 +446,7 @@ footer.site{background:var(--tinta);color:var(--papel);padding:3.4rem 0 2.4rem;f
             
             <span class="sede-tag">Aulas 1–2 <span>· cupo limitado</span></span>
             <div class="speakers"><span class="sp"><span class="foto" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span>Hilda Dien<em>Shantu</em></span><span class="sp"><span class="foto" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span>Ivannia García<em>Consultora en Tecnología de Alimentos y Chocolatería</em></span></div>
-            <!-- REEMPLAZAR por el enlace del formulario de esta cata -->
-            <a class="reg" href="#programa">Registro previo · 20 cupos</a>
+            <a class="reg" href="https://forms.gle/uaJNPr51ayBdzW7y6" target="_blank" rel="noopener">Registro previo · 20 cupos</a>
           </div>
         </article>
         <article class="slot charla" data-dias="s">
@@ -458,6 +458,7 @@ footer.site{background:var(--tinta);color:var(--papel);padding:3.4rem 0 2.4rem;f
             <span class="sede-tag">Auditorio <span>· 80 personas</span></span>
             <div class="speakers"><span class="sp"><span class="foto" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span>Jorge Salazar<em>La Iguana Chocolate</em></span></div>
             
+              <a class="reg" href="https://forms.gle/5Y36ccLZ8o2c56c56" target="_blank" rel="noopener">Reservar mi lugar</a>
           </div>
         </article>
         <article class="slot cata" data-dias="s">
@@ -468,8 +469,7 @@ footer.site{background:var(--tinta);color:var(--papel);padding:3.4rem 0 2.4rem;f
             
             <span class="sede-tag">Aulas 1–2 <span>· cupo limitado</span></span>
             <div class="speakers"><span class="sp"><span class="foto" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span>Albert Sánchez Gamboa<em>Aracacao</em></span></div>
-            <!-- REEMPLAZAR por el enlace del formulario de esta cata -->
-            <a class="reg" href="#programa">Registro previo · 20 cupos</a>
+            <a class="reg" href="https://forms.gle/7zX1qu2ygXanUBZU9" target="_blank" rel="noopener">Registro previo · 20 cupos</a>
           </div>
         </article>
         <article class="slot charla" data-dias="s">
@@ -481,6 +481,7 @@ footer.site{background:var(--tinta);color:var(--papel);padding:3.4rem 0 2.4rem;f
             <span class="sede-tag">Auditorio <span>· cierre del festival</span></span>
             <div class="speakers"><span class="sp"><span class="foto" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span>Andrés Ulate<em>Bicichocolate</em></span></div>
             
+              <a class="reg" href="https://forms.gle/Khy7NTU3rmWLPyH66" target="_blank" rel="noopener">Reservar mi lugar</a>
           </div>
         </article>
       </div>
@@ -516,8 +517,7 @@ footer.site{background:var(--tinta);color:var(--papel);padding:3.4rem 0 2.4rem;f
         </article>
       </div>
       <div class="faces-cta">
-        <!-- REEMPLAZAR: enlace del formulario de registro a la transmisión -->
-        <a class="cta claro" href="#programa">Register for the online broadcast</a>
+        <a class="cta claro" href="https://forms.gle/37TqRHtnBNn4DZTs8" target="_blank" rel="noopener">Register for the online broadcast</a>
         <span>Free · online · held in English</span>
       </div>
     </div>
