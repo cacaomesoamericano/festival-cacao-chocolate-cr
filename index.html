@@ -181,6 +181,9 @@ h1{margin:.6rem 0 0;line-height:0}
 .sesion li{position:relative;padding-left:1.05rem;margin-bottom:.32rem}
 .sesion li::before{content:"";position:absolute;left:0;top:.55em;width:.36rem;height:.36rem;border-radius:50%;background:var(--oro)}
 .faces a{color:var(--oro)}
+.live-intro{display:grid;gap:1.4rem 2.6rem;margin-top:.4rem}
+@media(min-width:900px){.live-intro{grid-template-columns:1fr 1fr}}
+.live-intro .lead{max-width:none;margin-top:0}
 .faces .lead strong{color:#fff;font-weight:600}
 .faces .lead em{color:#CFC4AE}
 .pulse{display:inline-flex;align-items:center;gap:.5rem;font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--oro)}
@@ -495,8 +498,10 @@ footer.site{background:var(--tinta);color:var(--papel);padding:3.4rem 0 2.4rem;f
     <div class="wrap">
       <p class="pulse">Live online · Friday 6 November</p>
       <h2 id="t-live">Terroir of Mesoamerican cacao</h2>
-      <p class="lead">The opening talk is broadcast live from Costa Rica with simultaneous translation into English, for chocolate makers, buyers and specialists following the festival from abroad. It presents the <strong>taste profiles, chemistry and quality attributes</strong> of fine cacao from <strong>Honduras, Nicaragua, Costa Rica and Panama</strong>, alongside the genetics, history and growing regions behind them — including ancestral germplasm kept by farmers that is absent from global collections.</p>
+      <div class="live-intro">
+        <p class="lead">The opening talk is broadcast live from Costa Rica with simultaneous translation into English, for chocolate makers, buyers and specialists following the festival from abroad. It presents the <strong>taste profiles, chemistry and quality attributes</strong> of fine cacao from <strong>Honduras, Nicaragua, Costa Rica and Panama</strong>, alongside the genetics, history and growing regions behind them.</p>
       <p class="lead">The session supports the case for <strong>Geographical Indications</strong> for Mesoamerican cacao, drawing on the <em>Cacaos de Origen Mesoamericano</em> project of <a href="https://fontagro.org/en/historias-de-impacto/cacaodeorigen" target="_blank" rel="noopener">FONTAGRO</a>, which treats origin quality as technical, cultural and social at once.</p>
+      </div>
       <div class="sesiones">
         <article class="sesion">
           <span class="eyebrow claro">What you will hear</span>
