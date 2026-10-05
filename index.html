@@ -185,8 +185,12 @@ h1{margin:.6rem 0 0;line-height:0}
 .marcas{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--linea);border:1px solid var(--linea);margin-top:2rem}
 @media(min-width:640px){.marcas{grid-template-columns:repeat(4,1fr)}}
 @media(min-width:960px){.marcas{grid-template-columns:repeat(5,1fr)}}
-.marca{background:var(--papel);aspect-ratio:5/3.2;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-style:italic;color:var(--gris);font-size:.9rem;transition:.2s}
-.marca:hover{background:var(--crema);color:var(--rojo)}
+.marca{background:var(--papel);min-height:92px;display:flex;flex-direction:column;justify-content:center;gap:.2rem;padding:1rem .9rem;transition:.2s}
+.marca b{font-size:.94rem;font-weight:700;line-height:1.2}
+.marca span{font-size:.76rem;color:var(--gris)}
+.marca.vacia{min-height:0}
+.marca:hover{background:var(--crema)}
+.marca:hover b{color:var(--rojo)}
 
 /* ---------- apoyo ---------- */
 .apoyo{background:var(--crema);border-top:1px solid var(--linea)}
@@ -258,7 +262,7 @@ footer.site{background:var(--tinta);color:var(--papel);padding:3.4rem 0 2.4rem;f
         <li><a href="#sede">Sede</a></li>
       </ul>
     </nav>
-    <a class="cta" href="#inscripcion">Inscripción</a>
+    <a class="cta" href="#programa">Inscripción</a>
   </div>
 </header>
 
@@ -278,7 +282,7 @@ footer.site{background:var(--tinta);color:var(--papel);padding:3.4rem 0 2.4rem;f
         </div>
         <p class="sub">Dos días para probar el país en una barra: <b>cacaos finos con nombre de territorio</b> y chocolate <span class="serif-it">bean to bar</span> hecho a pocos kilómetros de la finca.</p>
         <div class="hero-actions">
-          <a class="cta" href="#inscripcion">Hacer inscripción</a>
+          <a class="cta" href="#programa">Inscripción a catas y charlas</a>
           <a class="cta ghost" href="#programa">Ver programa</a>
         </div>
         <p class="organiza">Organizan la <b>Universidad Nacional (UNA)</b> y la <b>Asociación Costarricense de Cacao y Chocolates de Especialidad</b>.</p>
@@ -377,7 +381,8 @@ footer.site{background:var(--tinta);color:var(--papel);padding:3.4rem 0 2.4rem;f
             <p class="detalle">Charla interactiva con cata de muestras de chocolate. Se transmite en línea con traducción simultánea al inglés.</p>
             <span class="sede-tag">Auditorio <span>· presencial y en línea</span></span>
             <div class="speakers"><span class="sp"><span class="foto" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span>Dr. Carlos Eduardo Hernández<em>Universidad Nacional</em></span></div>
-            <a class="reg live-link" href="#inscripcion">Registro transmisión en línea · traducción al inglés</a>
+            <!-- REEMPLAZAR por el enlace del formulario de la transmisión -->
+            <a class="reg live-link" href="#programa" lang="en">Online in English · register here</a>
           </div>
         </article>
         <article class="slot cata" data-dias="v">
@@ -388,7 +393,8 @@ footer.site{background:var(--tinta);color:var(--papel);padding:3.4rem 0 2.4rem;f
             
             <span class="sede-tag">Aulas 1–2 <span>· cupo limitado</span></span>
             <div class="speakers"><span class="sp"><span class="foto" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span>Eugenia Volio<em>Catica</em></span></div>
-            <a class="reg" href="#inscripcion">Registro previo · 20 cupos</a>
+            <!-- REEMPLAZAR por el enlace del formulario de esta cata -->
+            <a class="reg" href="#programa">Registro previo · 20 cupos</a>
           </div>
         </article>
         <article class="slot charla" data-dias="v">
@@ -410,7 +416,8 @@ footer.site{background:var(--tinta);color:var(--papel);padding:3.4rem 0 2.4rem;f
             
             <span class="sede-tag">Aulas 1–2 <span>· cupo limitado</span></span>
             <div class="speakers"><span class="sp"><span class="foto" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span>Ariana Morales<em>Theobroma Cacao</em></span></div>
-            <a class="reg" href="#inscripcion">Registro previo · 20 cupos</a>
+            <!-- REEMPLAZAR por el enlace del formulario de esta cata -->
+            <a class="reg" href="#programa">Registro previo · 20 cupos</a>
           </div>
         </article>
         <article class="slot charla" data-dias="v">
@@ -432,7 +439,8 @@ footer.site{background:var(--tinta);color:var(--papel);padding:3.4rem 0 2.4rem;f
             
             <span class="sede-tag">Aulas 1–2 <span>· cupo limitado</span></span>
             <div class="speakers"><span class="sp"><span class="foto" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span>Hilda Dien<em>Shantu</em></span><span class="sp"><span class="foto" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span>Ivannia García<em>Consultora en Tecnología de Alimentos y Chocolatería</em></span></div>
-            <a class="reg" href="#inscripcion">Registro previo · 20 cupos</a>
+            <!-- REEMPLAZAR por el enlace del formulario de esta cata -->
+            <a class="reg" href="#programa">Registro previo · 20 cupos</a>
           </div>
         </article>
         <article class="slot charla" data-dias="s">
@@ -454,7 +462,8 @@ footer.site{background:var(--tinta);color:var(--papel);padding:3.4rem 0 2.4rem;f
             
             <span class="sede-tag">Aulas 1–2 <span>· cupo limitado</span></span>
             <div class="speakers"><span class="sp"><span class="foto" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span>Albert Sánchez Gamboa<em>Aracacao</em></span></div>
-            <a class="reg" href="#inscripcion">Registro previo · 20 cupos</a>
+            <!-- REEMPLAZAR por el enlace del formulario de esta cata -->
+            <a class="reg" href="#programa">Registro previo · 20 cupos</a>
           </div>
         </article>
         <article class="slot charla" data-dias="s">
@@ -496,7 +505,7 @@ footer.site{background:var(--tinta);color:var(--papel);padding:3.4rem 0 2.4rem;f
       </div>
       <div class="faces-cta">
         <!-- REEMPLAZAR: enlace del formulario de registro a la transmisión -->
-        <a class="cta claro" href="#inscripcion">Registro a la transmisión en línea</a>
+        <a class="cta claro" href="#programa" lang="en">Register for the online broadcast</a>
         <span>Gratuito · en línea · con traducción al inglés</span>
       </div>
     </div>
@@ -506,39 +515,43 @@ footer.site{background:var(--tinta);color:var(--papel);padding:3.4rem 0 2.4rem;f
   <section id="participantes" aria-labelledby="t-part">
     <div class="wrap">
       <p class="eyebrow azul">Participantes</p>
-      <h2 id="t-part">20 marcas bean to bar</h2>
-      <p class="lead">Chocolateros costarricenses que transforman cacao fino con trazabilidad de origen. Las marcas se anunciarán junto con la convocatoria.</p>
-      <div class="marcas" aria-label="Marcas participantes (por anunciar)">
-        <div class="marca">su marca aquí</div><div class="marca">su marca aquí</div>
-        <div class="marca">su marca aquí</div><div class="marca">su marca aquí</div>
-        <div class="marca">su marca aquí</div><div class="marca">su marca aquí</div>
-        <div class="marca">su marca aquí</div><div class="marca">su marca aquí</div>
-        <div class="marca">su marca aquí</div><div class="marca">su marca aquí</div>
+      <h2 id="t-part">19 marcas bean to bar</h2>
+      <p class="lead">Chocolateros de los territorios cacaoteros de Costa Rica —de Talamanca a Osa, de Upala a Puriscal— más una marca invitada de Bocas del Toro, Panamá.</p>
+      <div class="marcas">
+        <article class="marca"><b>Bici Chocolate</b><span>San Isidro, Heredia</span></article>
+        <article class="marca"><b>Aracacao</b><span>Escazú, San José</span></article>
+        <article class="marca"><b>Theobroma Cacao</b><span>Goicoechea, San José</span></article>
+        <article class="marca"><b>Chocolate Fusión</b><span>San Carlos, Alajuela</span></article>
+        <article class="marca"><b>Iguana Chocolate</b><span>Puriscal, San José</span></article>
+        <article class="marca"><b>Catica</b><span>Tortuguero – Poás</span></article>
+        <article class="marca"><b>OsaCoop</b><span>Osa, Puntarenas</span></article>
+        <article class="marca"><b>Nortico</b><span>Turrialba, Cartago</span></article>
+        <article class="marca"><b>Dos Lagunas</b><span>Siquirres, Limón</span></article>
+        <article class="marca"><b>Bruno’s Chocolate</b><span>Venecia de Osa, Puntarenas</span></article>
+        <article class="marca"><b>Chocolatera del Volcán</b><span>Guatuso – Tamarindo</span></article>
+        <article class="marca"><b>Velvao</b><span>Escazú, San José</span></article>
+        <article class="marca"><b>Makaw Kakau</b><span>Carara, Puntarenas</span></article>
+        <article class="marca"><b>Finca La Amistad</b><span>Upala, Alajuela</span></article>
+        <article class="marca"><b>Gourmet Fields</b><span>Santa Ana, San José</span></article>
+        <article class="marca"><b>Sibü Chocolate</b><span>Escazú, San José</span></article>
+        <article class="marca"><b>Caribeans</b><span>Talamanca, Limón</span></article>
+        <article class="marca"><b>Anandamaya</b><span>Cartago</span></article>
+        <article class="marca"><b>Mayamei</b><span>Bocas del Toro, Panamá</span></article>
+        <div class="marca vacia" aria-hidden="true"></div>
       </div>
+      <p class="prog-nota">Lista preliminar sujeta a confirmación.</p>
     </div>
   </section>
 
-  <!-- APOYO -->
+  <!-- ORGANIZAN -->
   <section class="apoyo" aria-labelledby="t-apoyo">
     <div class="wrap">
-      <p class="eyebrow">Realización y apoyo</p>
+      <p class="eyebrow">Realización</p>
       <h2 id="t-apoyo" style="font-size:clamp(1.5rem,3vw,2.1rem)">Quiénes hacen posible el festival</h2>
-      <div class="apoyo-row">
-        <h3>Realización</h3>
-        <div class="logos">
-          <div class="logo-slot">Universidad Nacional (UNA)</div>
-          <div class="logo-slot">Asociación Costarricense de Cacao y Chocolates de Especialidad</div>
-        </div>
+      <div class="logos" style="margin-top:1.4rem">
+        <div class="logo-slot">Universidad Nacional (UNA)</div>
+        <div class="logo-slot">Asociación Costarricense de Cacao y Chocolates de Especialidad</div>
       </div>
-      <div class="apoyo-row">
-        <h3>Patrocinadores</h3>
-        <div class="logos">
-          <div class="logo-slot vacio">espacio disponible</div>
-          <div class="logo-slot vacio">espacio disponible</div>
-          <div class="logo-slot vacio">espacio disponible</div>
-        </div>
-      </div>
-      <p class="prog-nota">¿Su organización quiere apoyar la primera edición? <a href="mailto:festival@cacaocr.example?subject=Patrocinio" style="color:var(--rojo);font-weight:600">Escríbanos para ser patrocinador</a>.</p>
     </div>
   </section>
 
@@ -552,39 +565,13 @@ footer.site{background:var(--tinta);color:var(--papel);padding:3.4rem 0 2.4rem;f
           <p><strong>Universidad Nacional (UNA)</strong><br>Edificio de Emprendimiento, Campus Benjamín Núñez<br>Lagunilla de Heredia, Costa Rica</p>
           <p><strong>Fechas</strong><br>Viernes 6 y sábado 7 de noviembre, 2026 · 8:00 a.m. – 6:00 p.m.</p>
           <p><strong>Acceso</strong><br>Entrada libre a la feria. Catas y charlas con registro previo por cupo limitado.</p>
-          <a class="cta ghost" href="#inscripcion">Cómo participar</a>
+          <a class="cta ghost" href="#programa">Ver programa</a>
         </div>
         <div class="mapa">
           <iframe title="Mapa: Edificio de Emprendimiento, Campus Benjamín Núñez, UNA, Lagunilla de Heredia" loading="lazy"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245.59781348100267!2d-84.12916217654919!3d9.970101426378909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fb8bc553dfe7%3A0xb36f0acd069d54cb!2sEdificio%20de%20Emprendimiento!5e0!3m2!1sen!2scr!4v1785453573571!5m2!1sen!2scr"
             allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- INSCRIPCIÓN -->
-  <section id="inscripcion" aria-labelledby="t-ins">
-    <div class="wrap">
-      <p class="eyebrow">Inscripción</p>
-      <h2 id="t-ins">Reserve su lugar en la mesa</h2>
-      <p class="lead">El formulario estará disponible próximamente. Escríbanos y le avisamos en cuanto se abran los cupos.</p>
-      <div class="ins-grid">
-        <article class="ins">
-          <h3>Visitantes</h3>
-          <p>Entrada libre a la feria. Para catas y charlas, regístrese con antelación.</p>
-          <a class="cta ghost" href="mailto:festival@cacaocr.example?subject=Registro%20visitante">Avisarme del registro</a>
-        </article>
-        <article class="ins">
-          <h3>Chocolateros y marcas</h3>
-          <p>Solicite los criterios de participación y la convocatoria de stands.</p>
-          <a class="cta ghost" href="mailto:festival@cacaocr.example?subject=Convocatoria%20expositores">Quiero exponer</a>
-        </article>
-        <article class="ins">
-          <h3>International makers</h3>
-          <p>Join the opening talk online, broadcast live with simultaneous translation into English.</p>
-          <a class="cta ghost" href="mailto:festival@cacaocr.example?subject=Online%20broadcast%20registration">Join the live broadcast</a>
-        </article>
       </div>
     </div>
   </section>
@@ -610,8 +597,7 @@ footer.site{background:var(--tinta);color:var(--papel);padding:3.4rem 0 2.4rem;f
     <div>
       <h3>Participar</h3>
       <ul>
-        <li><a href="#inscripcion">Inscripción</a></li>
-        <li><a href="mailto:festival@cacaocr.example?subject=Patrocinio">Sea patrocinador</a></li>
+        <li><a href="#programa">Inscripción</a></li>
         <li><a href="mailto:festival@cacaocr.example">Contacto</a></li>
         <li><a href="#participantes">Marcas participantes</a></li>
       </ul>
@@ -625,7 +611,7 @@ footer.site{background:var(--tinta);color:var(--papel);padding:3.4rem 0 2.4rem;f
 
 <div class="barra">
   <strong>6 · 7 NOV<span>Campus Benjamín Núñez, UNA</span></strong>
-  <a class="cta" href="#inscripcion">Inscripción</a>
+  <a class="cta" href="#programa">Inscripción</a>
 </div>
 
 <script>
