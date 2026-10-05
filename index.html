@@ -175,6 +175,12 @@ h1{margin:.6rem 0 0;line-height:0}
 .sesion strong{display:block;font-family:var(--display);font-size:1.6rem;text-transform:uppercase;line-height:1.05;margin:.3rem 0 .4rem}
 .sesion .hora{font-family:var(--serif);font-style:italic;font-size:1.1rem;color:var(--oro)}
 .sesion p{font-size:.9rem;color:#CFC4AE;margin-top:.5rem}
+.sesion ul{list-style:none;margin-top:.6rem;font-size:.88rem;color:#CFC4AE}
+.sesion li{position:relative;padding-left:1.05rem;margin-bottom:.32rem}
+.sesion li::before{content:"";position:absolute;left:0;top:.55em;width:.36rem;height:.36rem;border-radius:50%;background:var(--oro)}
+.faces a{color:var(--oro)}
+.faces .lead strong{color:#fff;font-weight:600}
+.faces .lead em{color:#CFC4AE}
 .pulse{display:inline-flex;align-items:center;gap:.5rem;font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--oro)}
 .pulse::before{content:"";width:.5rem;height:.5rem;border-radius:50%;background:var(--oro);animation:pulse 1.7s ease-in-out infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.2}}
@@ -280,7 +286,7 @@ footer.site{background:var(--tinta);color:var(--papel);padding:3.4rem 0 2.4rem;f
             <span>Campus Benjamín Núñez, UNA · Heredia, Costa Rica</span>
           </span>
         </div>
-        <p class="sub">Dos días para probar el país en una barra: <b>cacaos finos con nombre de territorio</b> y chocolate <span class="serif-it">bean to bar</span> hecho a pocos kilómetros de la finca.</p>
+        <p class="sub">Dos días para probar el país en una barra: <b>cacaos finos con nombre de territorio</b> y chocolates de especialidad.</p>
         <div class="hero-actions">
           <a class="cta" href="#programa">Inscripción a catas y charlas</a>
           <a class="cta ghost" href="#programa">Ver programa</a>
@@ -378,7 +384,7 @@ footer.site{background:var(--tinta);color:var(--papel);padding:3.4rem 0 2.4rem;f
           <div>
             <span class="tipo">Charla 1</span>
             <h3>Terroir de los cacaos mesoamericanos</h3>
-            <p class="detalle">Charla interactiva con cata de muestras de chocolate. Se transmite en línea con traducción simultánea al inglés.</p>
+            <p class="detalle">Perfiles de sabor, química y atributos de calidad de los cacaos finos de Honduras, Nicaragua, Costa Rica y Panamá, con su genética, historia y regiones de cultivo. Charla interactiva con cata de muestras; se transmite en línea con traducción simultánea al inglés.</p>
             <span class="sede-tag">Auditorio <span>· presencial y en línea</span></span>
             <div class="speakers"><span class="sp"><span class="foto" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span>Dr. Carlos Eduardo Hernández<em>Universidad Nacional</em></span></div>
             <!-- REEMPLAZAR por el enlace del formulario de la transmisión -->
@@ -483,30 +489,36 @@ footer.site{background:var(--tinta);color:var(--papel);padding:3.4rem 0 2.4rem;f
     </div>
   </section>
 
-  <!-- TRANSMISIÓN EN VIVO -->
-  <section id="live" class="faces" aria-labelledby="t-live">
+  <!-- LIVE BROADCAST (EN) -->
+  <section id="live" class="faces" lang="en" aria-labelledby="t-live">
     <div class="wrap">
-      <p class="pulse">Transmisión en vivo · viernes 6 de noviembre</p>
-      <h2 id="t-live">Terroir de los cacaos mesoamericanos</h2>
-      <p class="lead">La charla de apertura se transmite en línea con traducción simultánea al inglés, para chocolate makers, compradores y especialistas que siguen el festival desde fuera de Costa Rica. Incluye cata guiada de muestras de chocolate.</p>
+      <p class="pulse">Live online · Friday 6 November</p>
+      <h2 id="t-live">Terroir of Mesoamerican cacao</h2>
+      <p class="lead">The opening talk is broadcast live from Costa Rica with simultaneous translation into English, for chocolate makers, buyers and specialists following the festival from abroad. It presents the <strong>taste profiles, chemistry and quality attributes</strong> of fine cacao from <strong>Honduras, Nicaragua, Costa Rica and Panama</strong>, alongside the genetics, history and growing regions behind them — including ancestral germplasm kept by farmers that is absent from global collections.</p>
+      <p class="lead">The session supports the case for <strong>Geographical Indications</strong> for Mesoamerican cacao, drawing on the <em>Cacaos de Origen Mesoamericano</em> project of <a href="https://fontagro.org/en/historias-de-impacto/cacaodeorigen" target="_blank" rel="noopener">FONTAGRO</a>, which treats origin quality as technical, cultural and social at once.</p>
       <div class="sesiones">
         <article class="sesion">
-          <span class="eyebrow claro">Presencial</span>
-          <strong>Auditorio</strong>
-          <span class="hora">Viernes 6 · 8:30 a.m. (Costa Rica, GMT−6)</span>
-          <p>Charla interactiva con cata de muestras. Dr. Carlos Eduardo Hernández, Universidad Nacional.</p>
+          <span class="eyebrow claro">What you will hear</span>
+          <strong>Profiles &amp; origins</strong>
+          <span class="hora">Four countries, one shared terroir</span>
+          <ul>
+            <li>Sensory profiles region by region</li>
+            <li>Volatile compounds and chemometrics</li>
+            <li>Genetics, history and cacao-growing regions</li>
+            <li>Guided tasting of chocolate samples</li>
+          </ul>
         </article>
-        <article class="sesion" lang="en">
-          <span class="eyebrow claro">Online · English</span>
-          <strong>Live with translation</strong>
+        <article class="sesion">
+          <span class="eyebrow claro">How to join</span>
+          <strong>Online, in English</strong>
           <span class="hora">Friday 6 · 8:30 a.m. Costa Rica (GMT−6)</span>
-          <p>Broadcast with simultaneous translation into English. Free to join, registration required.</p>
+          <p>Free to join with prior registration. Simultaneous translation into English throughout. Presented by Dr. Carlos Eduardo Hernández, Universidad Nacional, live from the auditorium in Heredia.</p>
         </article>
       </div>
       <div class="faces-cta">
         <!-- REEMPLAZAR: enlace del formulario de registro a la transmisión -->
-        <a class="cta claro" href="#programa" lang="en">Register for the online broadcast</a>
-        <span>Gratuito · en línea · con traducción al inglés</span>
+        <a class="cta claro" href="#programa">Register for the online broadcast</a>
+        <span>Free · online · held in English</span>
       </div>
     </div>
   </section>
